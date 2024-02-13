@@ -3,22 +3,23 @@
   <head>
     <meta charset="utf-8">
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <title>Code.Org mit Knöpfen und in Schlecht</title>
+    <title>Code.Org mit Knöpfen und in schlecht</title>
     <link rel="shortcut icon" href="TemplateData/favicon.ico">
     <link rel="stylesheet" href="TemplateData/style.css">
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=1980 height=1080 tabindex="-1"></canvas>
+      <canvas id="unity-canvas" width=960 height=600 tabindex="-1"></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
           <div id="unity-progress-bar-full"></div>
         </div>
       </div>
-
+      <div id="unity-warning"> </div>
       <div id="unity-footer">
-        <div id="unity-build-title">Code.Org mit Knöpfen und in Schlecht</div>
+        <div id="unity-fullscreen-button"></div>
+        <div id="unity-build-title">Code.Org mit Knöpfen und in schlecht.</div>
       </div>
     </div>
     <script>
@@ -57,9 +58,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/html out.loader.js";
       var config = {
-        dataUrl: buildUrl + "/html out.data.gz",
-        frameworkUrl: buildUrl + "/html out.framework.js.gz",
-        codeUrl: buildUrl + "/html out.wasm.gz",
+        dataUrl: buildUrl + "/html out.data",
+        frameworkUrl: buildUrl + "/html out.framework.js",
+        codeUrl: buildUrl + "/html out.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "Chess_App_ADC",
